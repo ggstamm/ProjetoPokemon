@@ -49,6 +49,43 @@
 
     </FrameLayout>
 
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="291dp"
+        android:layout_height="527dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        shimmer:layout_constraintBottom_toBottomOf="parent"
+        shimmer:layout_constraintEnd_toEndOf="parent"
+        shimmer:layout_constraintStart_toStartOf="parent"
+        shimmer:layout_constraintTop_toTopOf="@+id/tituloPrincipal"
+        shimmer:layout_constraintVertical_bias="0.172"
+        android:visibility="gone"
+        shimmer:srcCompat="@drawable/error" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="monospace"
+        android:shadowColor="@color/light_color"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="2"
+        android:text="Não foi encontrado nenhum pokemon desse tipo :("
+        android:textAlignment="center"
+        android:textColor="@color/dark_color"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        shimmer:layout_constraintEnd_toEndOf="parent"
+        shimmer:layout_constraintStart_toStartOf="parent"
+        shimmer:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
     <com.facebook.shimmer.ShimmerFrameLayout
         android:id="@+id/shimmer_view_container"
         android:layout_width="match_parent"
@@ -65,13 +102,16 @@
 
             <include layout="@layout/data_placeholder_layout" />
 
-            <include layout="@layout/data_placeholder_layout" />
 
             <include layout="@layout/data_placeholder_layout" />
 
             <include layout="@layout/data_placeholder_layout" />
 
             <include layout="@layout/data_placeholder_layout" />
+
+            <include layout="@layout/data_placeholder_layout" />
+
+
 
             <include layout="@layout/data_placeholder_layout" />
 

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/linear_layout_recycler_view_row"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:orientation="horizontal"
+    android:layout_margin="5dp">
+
+    <TextView
+        android:id="@+id/tvNomePokemon"
+        android:layout_width="match_parent"
+        android:textColor="@color/light_color"
+        android:textStyle="bold"
+        android:fontFamily="monospace"
+        android:shadowColor="@color/dark_color"
+        android:layout_gravity="center"
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="2"/>
+
+</LinearLayout>
