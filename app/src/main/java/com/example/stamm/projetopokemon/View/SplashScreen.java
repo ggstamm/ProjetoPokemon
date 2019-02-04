@@ -1,9 +1,11 @@
-package com.example.stamm.projetopokemon;
+package com.example.stamm.projetopokemon.View;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
+
+import com.example.stamm.projetopokemon.R;
 
 public class SplashScreen extends AppCompatActivity {
 
@@ -23,3 +25,4 @@ public class SplashScreen extends AppCompatActivity {
         }, 2000);
     }
 }
+
