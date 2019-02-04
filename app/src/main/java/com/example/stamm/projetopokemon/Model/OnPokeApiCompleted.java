@@ -1,5 +1,7 @@
 package com.example.stamm.projetopokemon.Model;
 
+import java.util.ArrayList;
+
 public interface OnPokeApiCompleted {
-    void tiposPokemonCompleted(ListaTipoPokemon results);
+    void tiposPokemonCompleted(Object results);
 }

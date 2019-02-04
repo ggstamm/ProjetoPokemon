@@ -11,12 +11,4 @@ public class ListaTipoPokemon{
     public ArrayList<TipoPokemon> getTiposPokemon(){
         return this.tiposPokemon;
     }
-
-    public ArrayList<String> getNomesTiposPokemon(){
-        ArrayList<String> nomesTiposPokemon = new ArrayList<>();
-        for(TipoPokemon tipoPokemon : tiposPokemon){
-            nomesTiposPokemon.add(tipoPokemon.getNome());
-        }
-        return nomesTiposPokemon;
-    }
 }

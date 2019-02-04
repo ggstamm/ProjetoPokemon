@@ -18,5 +18,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".View.MenuPrincipal"/>
+        <activity android:name=".View.MenuSecundario"/>
+        <activity android:name=".View.DetalhesPokemon"/>
     </application>
 </manifest>

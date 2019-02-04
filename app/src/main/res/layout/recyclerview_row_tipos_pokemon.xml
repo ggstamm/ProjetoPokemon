@@ -1,22 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
+    android:id="@+id/linear_layout_recycler_view_row"
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="60dp"
     android:orientation="horizontal"
-    android:background="@drawable/rounded_corner_normal"
-    android:padding="13dp">
+    android:layout_margin="5dp">
 
     <TextView
         android:id="@+id/tvNomeTipoPokemon"
         android:layout_width="match_parent"
-        android:textColor="#ffffff"
-        android:text="Fighting"
+        android:textColor="@color/light_color"
+        android:textStyle="bold"
+        android:fontFamily="monospace"
+        android:shadowColor="@color/dark_color"
+        android:layout_gravity="center"
         android:gravity="center_vertical|center_horizontal"
         android:layout_height="wrap_content"
         android:textSize="20sp"
-        tools:layout_editor_absoluteX="39dp"
-        tools:layout_editor_absoluteY="10dp" />
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="2"/>
 
 </LinearLayout>

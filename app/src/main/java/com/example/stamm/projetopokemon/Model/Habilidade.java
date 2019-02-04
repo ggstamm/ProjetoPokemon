@@ -2,19 +2,12 @@ package com.example.stamm.projetopokemon.Model;
 
 import com.google.gson.annotations.SerializedName;
 
-public class Pokemon{
+public class Habilidade {
 
     @SerializedName("name")
-    private String name;
-
-    @SerializedName("url")
-    private String url;
+    public String name;
 
     public String getName() {
         return name;
-    }
-
-    public String getUrl() {
-        return url;
     }
 }

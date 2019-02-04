@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">PokemonDB</string>
     <string name="titulo">PokemonDB</string>
+    <string name="tituloPrincipal">Tipos de Pokemon</string>
+    <string name="altura">Altura:</string>
+    <string name="peso">Peso:</string>
 </resources>
