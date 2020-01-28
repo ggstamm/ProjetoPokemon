@@ -7,8 +7,8 @@ import com.example.stamm.projetopokemon.Model.PokeApi;
 
 public class ControllerListaPokemon {
 
-    public void retornarPokemons(Context context, String url, OnPokeApiCompleted onPokeApiCompleted){
-        new PokeApi(context, onPokeApiCompleted).consultarPokemons(url);
+    public void retornarPokemons(Context context, String type, OnPokeApiCompleted onPokeApiCompleted){
+        new PokeApi(context, onPokeApiCompleted).consultarPokemons(type);
     }
 
 }

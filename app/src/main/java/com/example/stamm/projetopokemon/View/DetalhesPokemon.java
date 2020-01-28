@@ -60,8 +60,8 @@ public class DetalhesPokemon extends AppCompatActivity {
         nome = nome.substring(0,1).toUpperCase() + nome.substring(1);
 
         mTextView.setText(nome);
-
-        getDetalhes(url);
+        String id = (url.substring(url.length()-5, url.length()-1)).replaceAll("\\D+", "");
+        getDetalhes(id);
     }
 
     public void setVisible(){
@@ -82,8 +82,8 @@ public class DetalhesPokemon extends AppCompatActivity {
         mTextView.setVisibility(View.GONE);
     }
 
-    public void getDetalhes(String url){
-        new ControllerPokemon().retornarDetalhesPokemon(getApplicationContext(), url, results -> {
+    public void getDetalhes(String id){
+        new ControllerPokemon().retornarDetalhesPokemon(getApplicationContext(), id, results -> {
             PokemonDetalhado pokemon = (PokemonDetalhado) results;
             mShimmerViewContainer.stopShimmerAnimation();
             mShimmerViewContainer.setVisibility(View.GONE);

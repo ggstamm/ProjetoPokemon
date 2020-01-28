@@ -62,8 +62,7 @@
         shimmer:layout_constraintStart_toStartOf="parent"
         shimmer:layout_constraintTop_toTopOf="@+id/tituloPrincipal"
         shimmer:layout_constraintVertical_bias="0.172"
-        android:visibility="gone"
-        shimmer:srcCompat="@drawable/error" />
+        android:visibility="gone" />
 
     <TextView
         android:id="@+id/textView3"

@@ -42,12 +42,12 @@ public class MenuSecundario extends AppCompatActivity {
         type = intent.getStringExtra("nome");
         type = type.substring(0,1).toUpperCase() + type.substring(1);
         mTextView.setText(type);
-
-        getPokemons(url);
+        String valor = (url.substring(url.length()-3, url.length()-1)).replaceAll("\\D+", "");;
+        getPokemons(valor);
     }
 
-    private void getPokemons(String url){
-        new ControllerListaPokemon().retornarPokemons(getApplicationContext(), url, results -> {
+    private void getPokemons(String type){
+        new ControllerListaPokemon().retornarPokemons(getApplicationContext(), type, results -> {
             ListaPokemon listaPokemon = (ListaPokemon) results;
             mShimmerViewContainer.stopShimmerAnimation();
             mShimmerViewContainer.setVisibility(View.GONE);

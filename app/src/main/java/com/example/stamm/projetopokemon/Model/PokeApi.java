@@ -15,7 +15,7 @@ import cz.msebera.android.httpclient.Header;
 
 public class PokeApi {
 
-    private static final String BASE_URL = "https://pokeapi.co/api/v2/";
+    private static final String BASE_URL = "https://t7m1oplj7c.execute-api.us-east-1.amazonaws.com/Alfa/";
     AsyncHttpClient asyncHttpClient;
     RequestParams requestParams;
     String jsonResponse;
@@ -49,8 +49,8 @@ public class PokeApi {
     });
     }
 
-    public void consultarPokemons(String url){
-        asyncHttpClient.get(url, requestParams, new JsonHttpResponseHandler(){
+    public void consultarPokemons(String type){
+        asyncHttpClient.get(BASE_URL + "type/" + type, requestParams, new JsonHttpResponseHandler(){
             @Override
             public void onSuccess(int statusCode, Header[] headers, JSONObject response) {
                 super.onSuccess(statusCode, headers, response);
@@ -69,8 +69,8 @@ public class PokeApi {
         });
     }
 
-    public void consultarPokemon(String url){
-        asyncHttpClient.get(url, requestParams, new JsonHttpResponseHandler(){
+    public void consultarPokemon(String id){
+        asyncHttpClient.get(BASE_URL + "pokemon/" + id, requestParams, new JsonHttpResponseHandler(){
         @Override
         public void onSuccess(int statusCode, Header[] headers, JSONObject response) {
             super.onSuccess(statusCode, headers, response);
