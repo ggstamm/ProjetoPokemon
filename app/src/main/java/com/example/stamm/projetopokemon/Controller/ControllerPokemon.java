@@ -8,5 +8,6 @@ import com.example.stamm.projetopokemon.Model.PokeApi;
 public class ControllerPokemon {
     public void retornarDetalhesPokemon(Context context, String id, OnPokeApiCompleted onPokeApiCompleted){
         new PokeApi(context, onPokeApiCompleted).consultarPokemon(id);
+        //teste
     }
 }
